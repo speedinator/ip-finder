@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
-import Map from './Map';
+// import Map from './Map';
 import Map2 from './Map2';
 import './App.css';
 
@@ -8,8 +8,8 @@ function App() {
  
   // Setting up the initial state variables
   const [ipDetails, setIpDetails] = useState([]);
-  const [lat, setLat] = useState(22.5726);
-  const [lon, setLon] = useState(88.3832);
+  // const [lat, setLat] = useState(22.5726);
+  // const [lon, setLon] = useState(88.3832);
  
   // Fetching the API once when the
   // component is mounted
