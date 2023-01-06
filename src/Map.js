@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import ReactMapGL, { Marker } from 'react-map-gl';
 import { RiUserLocationFill } from 'react-icons/ri';
 
