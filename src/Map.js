@@ -21,12 +21,12 @@ const Map = ({ lat, lon }) => {
  
   // Viewport re-renders whenever latitude
   // and longitude changes
-  useEffect(() => {
-    const a = { ...viewport };
-    a.latitude = lat;
-    a.longitude = lon;
-    setViewport(a);
-  }, [lat, lon]);
+//   useEffect(() => {
+//     const a = { ...viewport };
+//     a.latitude = lat;
+//     a.longitude = lon;
+//     setViewport(a);
+//   }, [lat, lon]);
  
   return (
     <div className="map">
