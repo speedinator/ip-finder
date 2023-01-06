@@ -48,3 +48,8 @@ p{
 #ip{
   color: #1453dc;
 }
+
+
+.map-container {
+  height: 400px;
+  }

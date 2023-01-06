@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
 import Map from './Map';
+import Map2 from './Map2';
 import './App.css';
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
   // component is mounted
   useEffect(() => {
     Axios.get('https://ipapi.co/json/').then((res) => {
+    // Axios.get('https://api.ipify.org?format=jsonp&callback=getIP').then((res) => {
+      console.log(res.data)
       setIpDetails(res.data);
       setLat(res.data.latitude);
       setLon(res.data.longitude);
@@ -36,9 +39,17 @@ function App() {
           <h4>Internet Service Provider(ISP):</h4>
            
 <p>{ipDetails.org}</p>
+      <p>Lat und Long:</p>
+      {ipDetails.latitude} + 
+      {ipDetails.longitude}
+      
+      
  
         </div>
-        <Map lat={lat} lon={lon} />
+        {/* <Map lat={lat} lon={lon} /> */}
+        <Map2 lat={ipDetails.latitude} > 
+
+        </Map2>
       </div>
     </>
   );
